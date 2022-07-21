@@ -1,0 +1,122 @@
+
+.btn{
+  border: none;
+  cursor: pointer;
+  background: #0044ff44;
+  border-radius: 5px;
+  width: 100px;
+  height: 25px;
+  line-height: 25px;
+  margin: auto;
+}
+
+.big{
+  width: 150px;
+  height: 37px;
+  line-height: 37px;
+  font-size: 20px;
+}
+
+.btn-label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wide{
+  width: 200px;
+  margin: 20px;
+}
+
+.textcenter{
+  text-align: center;
+}
+
+#inputTag, #inputTag2{
+  display: none;
+}
+
+h1{
+  text-align: center;
+}
+
+.img img{
+  width: 48px;
+  height: 48px;
+}
+
+#uploads, #uploads2{
+  display: flex;
+  justify-content: center;
+}
+
+.img{
+  margin: 10px;
+}
+
+.mappingScreen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hide{
+  display: none;
+}
+
+.center{
+display: flex;
+justify-content: center;
+margin-bottom: 20px;
+}
+
+.center div{
+  margin-right: 20px;
+}
+
+#bomTitle1 {
+  margin-right: 64px;
+}
+
+#bomTitle2 {
+  margin-left: 64px;
+}
+
+#fileView{
+  margin:0px;
+}
+
+.center p{
+  margin: 0px;
+  margin-right: 20px;
+  height: 20px;
+}
+
+.center input{
+  height: 20px;
+}
+
+
+
+#drop_zone {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  width:  400px;
+  height: 230px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+#drop_zone div{
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  border-style: dashed;
+  border-radius: 10px;
+  border-color: #cfdcff;
+  background: #f7f9ff;
+  width: 360px;
+  height: 190px;
+}

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="dk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>BOM Comparison Tool</title>
+  <meta name="description" content="BOM Comparison Tool">
+  <meta name="author" content="Rasmus Pedersen">
+  <script src="scripts/main.js"></script>
+  <script src="scripts/screenController.js"></script>
+  <script src="scripts/businessLogic.js"></script>
+  <script src="scripts/csvToArray.js"></script>
+  <script src="scripts/uploadHandlers.js"></script>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div id ="uploadScreen" >
+    <div class="center">
+      <div>
+        <h2> Upload two BOMS in CSV format</h2>
+        <div id="drop_zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+          <div>
+            <img src="img/blue-folder-icon.png">
+            <p>Drag two BOMS to this drop zone.</p>
+            <p> ----------------------------------------------- </p>
+            <label class="btn-label" for="inputTag">
+              <p class="btn">Select file</p> <br/>
+              <input id="inputTag" oninput="inputHandler()" type="file" multiple/>
+              <br/>
+            </label>
+          </div>
+        </div>
+        <div id="uploads">
+
+        </div>
+      </div>
+      <div>
+        <h2 class="center"> Mapping file </h2>
+        <div id="drop_zone" ondrop="dropHandler2(event);" ondragover="dragOverHandler(event);">
+          <div>
+            <img src="img/blue-folder-icon.png">
+            <p>Drag up to one map file to this drop zone.</p>
+            <p> ----------------------------------------------- </p>
+            <label class="btn-label" for="inputTag2">
+              <p class="btn">Select file</p> <br/>
+              <input id="inputTag2" oninput="inputHandler2()" type="file" multiple/>
+              <br/>
+            </label>
+          </div>
+        </div>
+        <div id="uploads2">
+
+        </div>
+      </div>
+    </div>
+    <button class="big btn center" onclick="readHeaders()"> Continue </button>
+  </div>
+
+  <div id ="mappingScreen" class="mappingScreen hide">
+    <div id="mapping">
+      <div>
+        <h1> Please select the correct mapping </h1>
+      </div>
+      <div>
+        <p> Left side is bom1 and right side is bom2</p>
+      </div>
+      <div>
+      <form submit="test()">
+        <label for="cars">Test1:</label>
+        <select name="cars" id="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+        </select>
+        <br><br>
+        <label for="cars">Test2:</label>
+        <select name="cars" id="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+        </select>
+        <br><br>
+        <label for="cars">Test3:</label>
+        <select name="cars" id="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+
+      </form>
+    </div>
+    </div>
+
+  </div>
+
+  <div id="regexScreen" class="hide">
+
+
+  </div>
+
+</body>
+</html>
